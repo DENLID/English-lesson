@@ -4,25 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Изучение английского языка</title>
+    <title>Вивчення англійської мови</title>
 </head>
 <body>
     <div class="container">
-        <h1>Добро пожаловать в учебный портал по английскому языку!</h1>
+        <h1>Добро пожалувати до навчального порталу з англійської мови!</h1>
         <div id="level-selector">
-            <label for="difficulty">Выберите уровень сложности:</label>
+            <label for="difficulty">Виберіть рівень складності:</label>
             <select id="difficulty">
-                <option value="beginner">Начинающий</option>
-                <option value="intermediate">Средний</option>
-                <option value="advanced">Продвинутый</option>
+                <option value="beginner">Початківець</option>
+                <option value="intermediate"></option>
+                <option value="advanced">Середній</option>
             </select>
-            <button onclick="startLesson()">Начать урок</button>
+            <button onclick="startLesson()">Почати урок</button>
         </div>
         <div id="lesson-container" style="display: none;">
             <h2 id="lesson-title"></h2>
             <p id="question"></p>
-            <input type="text" id="answer" placeholder="Введите ваш ответ">
-            <button onclick="checkAnswer()">Проверить ответ</button>
+            <input type="text" id="answer" placeholder="Введіть вашу відповідь">
+            <button onclick="checkAnswer()">Перевірити відповідь</button>
             <p id="result"></p>
         </div>
     </div>
