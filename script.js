@@ -42,7 +42,7 @@ function displayLesson() {
     const result = document.getElementById("result");
 
     lessonTitle.textContent = `Урок ${currentLessonIndex + 1}`;
-    question.textContent = `Что такое "${levels[currentLevel][currentLessonIndex]}"?`;
+    question.textContent = `Що таке "${levels[currentLevel][currentLessonIndex]}"?`;
     result.textContent = "";
 
     document.getElementById("answer").value = "";
