@@ -5,21 +5,21 @@ const levels = {
 };
 
 const answers_sp = {
-    "apple": "яблоко", 
+    "apple": "яблуко", 
     "banana": "банан", 
-    "cat": "кот", 
+    "cat": "кіт", 
     "dog": "собака", 
     "elephant": "слон",
-    "computer": "компьютер", 
-    "programming": "программирование", 
-    "language": "язык",
-    "developer": "разработчик", 
+    "computer": "комп'ютер", 
+    "programming": "програмування", 
+    "language": "мова",
+    "developer": "розробник", 
     "website": "сайт",
-    "encapsulation": "инкапсуляция", 
-    "inheritance": "наследование", 
-    "polymorphism": "полиморфизм", 
-    "abstraction": "абстракция", 
-    "interface": "интерфейс"
+    "encapsulation": "інкапсуляція", 
+    "inheritance": "успадкування", 
+    "polymorphism": "поліморфізм", 
+    "abstraction": "абстракція", 
+    "interface": "інтерфейс"
 }
 
 let currentLevel = "";
@@ -57,15 +57,15 @@ function checkAnswer() {
     console.log(correctAnswer)
 
     if (userAnswer === correctAnswer) {
-        result.textContent = "Правильно! Следующий вопрос.";
+        result.textContent = "Правильно! Наступне питання.";
         currentLessonIndex++;
         if (currentLessonIndex < levels[currentLevel].length) {
             displayLesson();
         } else {
-            result.textContent = "Поздравляю! Вы завершили уроки.";
+            result.textContent = "Вітаю! Ви закінчили уроки.";
             document.getElementById("lesson-container").style.display = "none";
         }
     } else {
-        result.textContent = "Неправильный ответ. Попробуйте еще раз.";
+        result.textContent = "Неправильна відповідь. Спробуйте ще раз.";
     }
 }
